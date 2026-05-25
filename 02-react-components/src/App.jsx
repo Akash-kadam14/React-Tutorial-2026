@@ -1,12 +1,12 @@
 import React from "react";
+import Card from "../components/Card";
+import Nav from "../components/Nav";
 
 const App = () => {
   return (
-    <div className="card">
-      <h1>Akash</h1>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, rerum!
-      </p>
+    <div>
+      <Nav />
+      <Card />
     </div>
   );
 };
