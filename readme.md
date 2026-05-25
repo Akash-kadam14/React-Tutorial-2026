@@ -46,3 +46,10 @@ return (
 }
 
 export default App
+
+props (properties) - used to send the dynamic data between the components that is from parent component to child component
+so we can pass value to it from parent to child
+APP-> <Card attribute = value, can pass multiple params for str value can be pass using '' for number use {} age = {18}/> this is we calling the card function and will also receive that as params Card(props) {
+props here receive as an object
+return (<h1> {props.user} </h1>)
+} so here we can use data dynamically
