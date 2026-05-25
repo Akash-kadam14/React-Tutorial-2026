@@ -8,6 +8,7 @@ fragements - empty tags <> </> used to return a multiple elements from function 
 eg.
 const App = () => {
 return (
+
 <div id = 'dad'>
 App
 <h1>Hello</h1>
@@ -28,3 +29,20 @@ App
 };
 
 export default App;
+
+components -- is a reusable and independant piece of UI code to build parts of an app
+eg. Navbar can be one component
+Product card can be another component
+Footer can be another component
+These components can be reused across the application.
+eg-- Card.jsx -- function Card() {
+const userName = 'Akash'
+return (
+
+  <div>
+  <h1>Hi i am {username} // to print the dynamic value we use {}
+  </div>
+  )
+}
+
+export default App
