@@ -53,3 +53,8 @@ APP-> <Card attribute = value, can pass multiple params, for str value can be pa
 props here receive as an object
 return (<h1> {props.user} </h1>)
 } so here we can use data dynamically
+
+if we create css folder and we create seperate file for every component
+then in the App.jsx we import that css for the component so that time they will collide if we use same className for another component
+se we use
+use module css for components -- e.g folder structure -- components-> eachComponents like Button(Butto.jsx and Button.module.css), Header(Header.jsx, header.module.css)
