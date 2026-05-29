@@ -58,3 +58,16 @@ if we create css folder and we create seperate file for every component
 then in the App.jsx we import that css for the component so that time they will collide if we use same className for another component
 se we use
 use module css for components -- e.g folder structure -- components-> eachComponents like Button(Butto.jsx and Button.module.css), Header(Header.jsx, header.module.css)
+
+we can use that imported css like this
+
+BUtton.jsx
+import styles from './Button.module.css
+
+const Button = () => {
+return(
+<div className = {styles.btn}>
+<Button />
+</div>
+)
+}
