@@ -13,6 +13,9 @@ const App = () => {
     console.log(event.target.value)
   }
 
+  function pageScrolling(event) {
+    console.log('Mouse wheel scrolled', event.delataY)
+  }
   return (
     <div>App
        <button onDoubleClick={btnCLicked} onMouseOver={onMouseOver}>
@@ -29,7 +32,16 @@ const App = () => {
         <input type="text" placeholder="Enter text" 
             onChange={  function (event) {
                     handleInputChange(event)
-  }} />
+        }} />
+
+        <div  onWheel={(elem)=> {
+          pageScrolling(elem)
+        }}>
+          <div className="page1"></div>
+          <div className="page2"></div>
+          <div className="page3"></div>
+        </div>
+
     </div>
    
   )
